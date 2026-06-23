@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="Tell CuttingEdge Worship what you want to learn, develop, or contribute." />
   <meta name="theme-color" content="#09090d" />
   <title>Join | CuttingEdge Worship</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -12,91 +11,38 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="join">
-  <a class="skip-link" href="#main-content">Skip to content</a>
+<body>
+  <header class="site-header"><nav class="top-nav shell" aria-label="Main navigation"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>WORSHIP</small></span></a><div class="desktop-nav"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a class="nav-cta active" href="join.html">Join</a></div></nav></header>
 
-  <header class="site-header">
-    <nav class="top-nav shell" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="CuttingEdge Worship home">
-        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg>
-        <span><strong>CuttingEdge</strong><small>WORSHIP</small></span>
-      </a>
-      <div class="desktop-nav">
-        <a href="index.html">Home</a><a href="explore.html">Explore</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a class="button button-small active-button" href="join.html">Join the Community</a>
+  <main class="app-main">
+    <section class="app-screen">
+      <div class="shell join-layout">
+        <aside class="join-note">
+          <p class="eyebrow">YOUR JOURNEY CAN START NOW</p>
+          <h2>You do not need to be ready. You only need to be willing.</h2>
+          <p>Tell us where you want to grow and we will help you identify a starting point.</p>
+          <ol class="join-steps"><li><span>01</span><strong>Share your interest</strong></li><li><span>02</span><strong>Tell us your starting point</strong></li><li><span>03</span><strong>Connect with the team</strong></li></ol>
+        </aside>
+
+        <form class="compact-form" id="interest-form">
+          <p class="eyebrow">JOIN CUTTINGEDGE</p>
+          <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="Enter your name" /></div>
+          <div class="form-row"><label for="interest">What are you interested in?</label><select id="interest" name="interest" required><option value="">Choose one</option><option>Singing</option><option>Instruments</option><option>Songwriting and Production</option><option>Media and Creative</option><option>Community</option><option>Not sure yet</option></select></div>
+          <div class="form-row"><label for="message">Tell us your starting point or goal</label><textarea id="message" name="message" required placeholder="Example: I enjoy singing and want to improve my confidence..."></textarea></div>
+          <button class="primary-button" type="submit">Create My Message</button>
+          <p class="form-footnote">Nothing is sent or stored automatically.</p>
+        </form>
       </div>
-      <a class="mobile-header-action current" href="join.html">Join</a>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="page-hero shell reveal join-hero">
-      <p class="eyebrow">YOUR JOURNEY CAN START NOW</p>
-      <h1>You do not need to be ready.<br><span>You only need to be willing.</span></h1>
-      <p>Tell us what you enjoy, what you already know, or what you want to learn. This helps us understand how we can guide you.</p>
-    </section>
-
-    <section class="join-layout shell reveal">
-      <div class="join-side-card">
-        <span class="side-card-label">WHAT TO EXPECT</span>
-        <h2>A simple first step.</h2>
-        <ol class="step-list">
-          <li><span>01</span><div><strong>Share your interest</strong><p>Choose an area or tell us that you are still unsure.</p></div></li>
-          <li><span>02</span><div><strong>Tell us your starting point</strong><p>Experience is welcome, but it is not required.</p></div></li>
-          <li><span>03</span><div><strong>Connect with the team</strong><p>We can guide you toward a role, activity, or learning path.</p></div></li>
-        </ol>
-        <div class="reassurance"><span>✓</span><p>No pressure to be perfect. Come willing to learn, connect, and grow.</p></div>
-      </div>
-
-      <form class="join-form" id="interest-form">
-        <div class="form-heading"><span>INTEREST FORM</span><h2>Find your place in CuttingEdge.</h2></div>
-
-        <div class="form-group">
-          <label for="name">Your name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required placeholder="Enter your name" />
-        </div>
-
-        <fieldset class="form-group interest-options">
-          <legend>What are you interested in?</legend>
-          <label><input type="radio" name="interest" value="Singing and vocal growth" required><span>♪</span><strong>Singing</strong></label>
-          <label><input type="radio" name="interest" value="Playing or learning an instrument"><span>♬</span><strong>Instruments</strong></label>
-          <label><input type="radio" name="interest" value="Songwriting and music production"><span>✎</span><strong>Creating Music</strong></label>
-          <label><input type="radio" name="interest" value="Media and creative work"><span>▣</span><strong>Media & Creative</strong></label>
-          <label><input type="radio" name="interest" value="Fellowship and community"><span>◎</span><strong>Community</strong></label>
-          <label><input type="radio" name="interest" value="Not sure yet"><span>＋</span><strong>Not Sure Yet</strong></label>
-        </fieldset>
-
-        <div class="form-group">
-          <label for="experience">Tell us about your experience or starting point</label>
-          <textarea id="experience" name="experience" rows="4" required placeholder="Example: I enjoy singing but I have never joined a team before..."></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="goal">What would you like to learn, develop, or contribute?</label>
-          <textarea id="goal" name="goal" rows="4" required placeholder="Tell us what you hope to experience in the community..."></textarea>
-        </div>
-
-        <button class="button button-full" type="submit">Create My Interest Message</button>
-        <p class="form-note">This version creates a message you can copy. No information is sent or stored automatically.</p>
-
-        <div class="form-result" id="form-result" aria-live="polite" hidden>
-          <div class="result-heading"><span>✓</span><div><strong>Your message is ready.</strong><small>Copy it and send it to the CuttingEdge Worship team.</small></div></div>
-          <textarea id="generated-message" rows="10" readonly></textarea>
-          <button class="copy-button" id="copy-message" type="button">Copy Message</button>
-        </div>
-      </form>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-content"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>WORSHIP</small></span></a><p>More Than Music. A Community With Purpose.</p><span>© <span class="current-year"></span></span></div></footer>
+  <section class="message-sheet" id="message-sheet" hidden aria-live="polite">
+    <div class="sheet-head"><strong>Your message is ready.</strong><button class="sheet-close" id="sheet-close" type="button" aria-label="Close">×</button></div>
+    <textarea id="generated-message" readonly></textarea>
+    <button class="primary-button" id="copy-message" type="button">Copy Message</button>
+  </section>
 
-  <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
-    <a href="index.html"><span class="nav-icon">⌂</span><small>Home</small></a>
-    <a href="explore.html"><span class="nav-icon">✦</span><small>Explore</small></a>
-    <a href="updates.html"><span class="nav-icon">◷</span><small>Updates</small></a>
-    <a href="community.html"><span class="nav-icon">◎</span><small>Community</small></a>
-    <a class="join-nav active" href="join.html"><span class="nav-icon">＋</span><small>Join</small></a>
-  </nav>
-
+  <nav class="mobile-bottom-nav" aria-label="Mobile navigation"><a href="index.html"><span class="nav-icon">⌂</span><small>Home</small></a><a href="explore.html"><span class="nav-icon">✦</span><small>Explore</small></a><a href="updates.html"><span class="nav-icon">◷</span><small>Updates</small></a><a href="community.html"><span class="nav-icon">◎</span><small>Community</small></a><a class="active" href="join.html"><span class="nav-icon">＋</span><small>Join</small></a></nav>
   <script src="script.js"></script>
 </body>
 </html>
