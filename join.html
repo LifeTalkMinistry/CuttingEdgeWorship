@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="Express interest in serving through CuttingEdge Worship, the worship department of the Young Professional Service." />
+  <meta name="description" content="The joining process for CuttingEdge Worship." />
   <meta name="theme-color" content="#09090d" />
-  <title>Serve | CuttingEdge Worship</title>
+  <title>Join | CuttingEdge Worship Team Guide</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,37 +13,48 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header"><nav class="top-nav shell" aria-label="Main navigation"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>YP WORSHIP DEPT.</small></span></a><div class="desktop-nav"><a href="index.html">Home</a><a href="explore.html">Roles</a><a href="updates.html">Roadmap</a><a href="community.html">Vision</a><a class="nav-cta active" href="join.html">Serve</a></div></nav></header>
+  <header class="site-header">
+    <nav class="top-nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>TEAM GUIDE</small></span></a>
+      <div class="desktop-nav"><a href="index.html">Guide</a><a href="community.html">Vision</a><a href="updates.html">Roadmap</a><a href="explore.html">Standards</a><a class="nav-cta active" href="join.html">Join</a></div>
+    </nav>
+  </header>
 
   <main class="app-main">
     <section class="app-screen">
       <div class="shell join-layout">
         <aside class="join-note">
-          <p class="eyebrow">SERVE WITH CUTTINGEDGE</p>
-          <h2>Use your gift to support the Young Professional Service.</h2>
-          <p>This is an invitation to explore a role inside its worship and creative music department.</p>
-          <ol class="join-steps"><li><span>01</span><strong>Choose a department role</strong></li><li><span>02</span><strong>Share your starting point</strong></li><li><span>03</span><strong>Connect, train, and serve</strong></li></ol>
+          <p class="eyebrow">JOINING PROCESS</p>
+          <h2>Joining begins with alignment, not immediate assignment.</h2>
+          <p>Reading the guide helps you understand the department before entering its development and service process.</p>
+          <ol class="join-steps">
+            <li><span>01</span><strong>Review the vision and standards</strong></li>
+            <li><span>02</span><strong>Express your role interest</strong></li>
+            <li><span>03</span><strong>Join an initial conversation</strong></li>
+            <li><span>04</span><strong>Attend orientation or observation</strong></li>
+            <li><span>05</span><strong>Train, develop, and serve</strong></li>
+          </ol>
         </aside>
 
         <form class="compact-form" id="interest-form">
           <p class="eyebrow">SERVICE INTEREST</p>
           <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="Enter your name" /></div>
-          <div class="form-row"><label for="interest">Which role interests you?</label><select id="interest" name="interest" required><option value="">Choose a role</option><option>Vocals and Worship Leading</option><option>Instruments and Arrangement</option><option>Songwriting and Original Music</option><option>Audio and Music Production</option><option>Media and Creative</option><option>Training and Development</option><option>Not sure yet</option></select></div>
-          <div class="form-row"><label for="message">Tell us your experience or what you want to develop</label><textarea id="message" name="message" required placeholder="Example: I play basic guitar and want to learn how to serve with a team..."></textarea></div>
+          <div class="form-row"><label for="interest">Which area interests you?</label><select id="interest" name="interest" required><option value="">Choose an area</option><option>Vocals and Worship Leading</option><option>Instruments and Arrangement</option><option>Songwriting and Original Music</option><option>Audio and Music Production</option><option>Media and Creative</option><option>Training and Development</option><option>Not sure yet</option></select></div>
+          <div class="form-row"><label for="message">Tell us your experience, availability, or what you want to develop</label><textarea id="message" name="message" required placeholder="Example: I play basic guitar, work on weekdays, and want to learn how to serve with a team..."></textarea></div>
           <button class="primary-button" type="submit">Create My Interest Message</button>
-          <p class="form-footnote">This expresses interest in serving through the Young Professional Service worship department.</p>
+          <p class="form-footnote">Submitting interest does not automatically assign an active role. It begins a conversation and development process.</p>
         </form>
       </div>
     </section>
   </main>
 
   <section class="message-sheet" id="message-sheet" hidden aria-live="polite">
-    <div class="sheet-head"><strong>Your service-interest message is ready.</strong><button class="sheet-close" id="sheet-close" type="button" aria-label="Close">×</button></div>
+    <div class="sheet-head"><strong>Your interest message is ready.</strong><button class="sheet-close" id="sheet-close" type="button" aria-label="Close">×</button></div>
     <textarea id="generated-message" readonly></textarea>
     <button class="primary-button" id="copy-message" type="button">Copy Message</button>
   </section>
 
-  <nav class="mobile-bottom-nav" aria-label="Mobile navigation"><a href="index.html"><span class="nav-icon">⌂</span><small>Home</small></a><a href="explore.html"><span class="nav-icon">✦</span><small>Roles</small></a><a href="updates.html"><span class="nav-icon">◷</span><small>Roadmap</small></a><a href="community.html"><span class="nav-icon">◎</span><small>Vision</small></a><a class="active" href="join.html"><span class="nav-icon">＋</span><small>Serve</small></a></nav>
+  <nav class="mobile-bottom-nav" aria-label="Mobile navigation"><a href="index.html"><span class="nav-icon">⌂</span><small>Guide</small></a><a href="community.html"><span class="nav-icon">◎</span><small>Vision</small></a><a href="updates.html"><span class="nav-icon">◷</span><small>Roadmap</small></a><a href="explore.html"><span class="nav-icon">✓</span><small>Standards</small></a><a class="active" href="join.html"><span class="nav-icon">＋</span><small>Join</small></a></nav>
   <script src="script.js"></script>
 </body>
 </html>
