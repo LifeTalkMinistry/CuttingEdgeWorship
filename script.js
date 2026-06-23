@@ -30,12 +30,12 @@ if (form && messageSheet && generatedMessage) {
       "Hello CuttingEdge Worship!",
       "",
       `My name is ${name}.`,
-      `I am interested in: ${interest}.`,
+      `I am interested in serving through: ${interest}.`,
       "",
-      "My starting point or goal:",
+      "My experience or what I would like to develop:",
       message,
       "",
-      "I would like to know how I can take the next step with the community."
+      "I would like to know how I can take the next step in serving through the worship and creative music department of the Young Professional Service."
     ].join("\n");
 
     messageSheet.hidden = false;
