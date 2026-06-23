@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="Discover where you can sing, play, create, learn, and serve with CuttingEdge Worship." />
   <meta name="theme-color" content="#09090d" />
   <title>Explore | CuttingEdge Worship</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -12,139 +11,61 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="explore">
-  <a class="skip-link" href="#main-content">Skip to content</a>
-
+<body>
   <header class="site-header">
     <nav class="top-nav shell" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="CuttingEdge Worship home">
-        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg>
-        <span><strong>CuttingEdge</strong><small>WORSHIP</small></span>
-      </a>
-      <div class="desktop-nav">
-        <a href="index.html">Home</a><a class="active" href="explore.html">Explore</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a class="button button-small" href="join.html">Join the Community</a>
-      </div>
-      <a class="mobile-header-action" href="join.html">Join</a>
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>WORSHIP</small></span></a>
+      <div class="desktop-nav"><a href="index.html">Home</a><a class="active" href="explore.html">Explore</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a class="nav-cta" href="join.html">Join</a></div>
     </nav>
   </header>
 
-  <main id="main-content">
-    <section class="page-hero shell reveal">
-      <p class="eyebrow">FIND YOUR PLACE</p>
-      <h1>Bring what you have.<br><span>Grow into what you can become.</span></h1>
-      <p>Choose the path that feels closest to you. You can already have experience, be starting from zero, or still be unsure.</p>
-    </section>
-
-    <section class="page-section shell reveal">
-      <div class="section-intro compact-heading">
-        <div><p class="eyebrow">CHOOSE A PATH</p><h2>Tap a card to learn more.</h2></div>
+  <main class="app-main">
+    <section class="app-screen">
+      <div class="shell">
+        <div class="screen-header">
+          <p class="eyebrow">FIND YOUR PLACE</p>
+          <h1>Bring what you have.<br><span>Grow into what you can become.</span></h1>
+          <p>Swipe through the paths and choose what feels closest to you.</p>
+        </div>
+        <p class="swipe-note">Swipe to explore →</p>
+        <div class="horizontal-rail" aria-label="CuttingEdge opportunities">
+          <a class="rail-card accent" href="join.html?interest=Singing">
+            <div class="card-top"><span class="card-symbol">♪</span><span class="card-index">01</span></div>
+            <div><h2>Singing & Vocal Growth</h2><p>Learn harmony, breathing, pitch, confidence, and team singing.</p></div>
+            <span class="card-link">Choose this path →</span>
+          </a>
+          <a class="rail-card" href="join.html?interest=Instruments">
+            <div class="card-top"><span class="card-symbol">♬</span><span class="card-index">02</span></div>
+            <div><h2>Instruments</h2><p>Play keyboard, guitar, bass, drums, strings, or start learning.</p></div>
+            <span class="card-link">Choose this path →</span>
+          </a>
+          <a class="rail-card" href="join.html?interest=Songwriting%20and%20Production">
+            <div class="card-top"><span class="card-symbol">✎</span><span class="card-index">03</span></div>
+            <div><h2>Songwriting & Production</h2><p>Create lyrics, melodies, arrangements, recordings, and original music.</p></div>
+            <span class="card-link">Choose this path →</span>
+          </a>
+          <a class="rail-card" href="join.html?interest=Media%20and%20Creative">
+            <div class="card-top"><span class="card-symbol">▣</span><span class="card-index">04</span></div>
+            <div><h2>Media & Creative</h2><p>Contribute through design, video, photography, editing, and content.</p></div>
+            <span class="card-link">Choose this path →</span>
+          </a>
+          <a class="rail-card accent" href="join.html?interest=Community">
+            <div class="card-top"><span class="card-symbol">◎</span><span class="card-index">05</span></div>
+            <div><h2>Community & Fellowship</h2><p>Belong, connect, grow spiritually, and spend time with purpose.</p></div>
+            <span class="card-link">Choose this path →</span>
+          </a>
+        </div>
       </div>
-
-      <div class="filter-chips" role="tablist" aria-label="Filter opportunities">
-        <button class="filter-chip active" data-filter="all" type="button">All</button>
-        <button class="filter-chip" data-filter="music" type="button">Music</button>
-        <button class="filter-chip" data-filter="creative" type="button">Creative</button>
-        <button class="filter-chip" data-filter="community" type="button">Community</button>
-        <button class="filter-chip" data-filter="beginner" type="button">Beginner-friendly</button>
-      </div>
-
-      <div class="opportunity-list">
-        <article class="opportunity-card" id="singing" data-category="music beginner">
-          <button class="opportunity-toggle" type="button" aria-expanded="false">
-            <span class="opportunity-symbol">♪</span>
-            <span class="opportunity-title"><small>VOICE</small><strong>Singing & Vocal Growth</strong><em>Experienced or beginner</em></span>
-            <span class="expand-icon">＋</span>
-          </button>
-          <div class="opportunity-details">
-            <p>Grow in pitch, breathing, rhythm, harmony, confidence, and singing with a team.</p>
-            <div class="detail-grid"><span>Vocal practice</span><span>Harmony sessions</span><span>Recording guidance</span><span>Worship leading</span></div>
-            <a class="inline-cta" href="join.html?interest=Singing%20and%20vocal%20growth">I’m interested →</a>
-          </div>
-        </article>
-
-        <article class="opportunity-card" id="instruments" data-category="music beginner">
-          <button class="opportunity-toggle" type="button" aria-expanded="false">
-            <span class="opportunity-symbol">♬</span>
-            <span class="opportunity-title"><small>INSTRUMENTS</small><strong>Play or Start Learning</strong><em>Keyboard, guitar, bass, drums, strings</em></span>
-            <span class="expand-icon">＋</span>
-          </button>
-          <div class="opportunity-details">
-            <p>Use the instrument you already play or tell us what you want to learn. We want to guide people who are willing to grow.</p>
-            <div class="detail-grid"><span>Band rehearsals</span><span>Basic technique</span><span>Chord training</span><span>Team playing</span></div>
-            <a class="inline-cta" href="join.html?interest=Playing%20or%20learning%20an%20instrument">I’m interested →</a>
-          </div>
-        </article>
-
-        <article class="opportunity-card" id="learn" data-category="music creative beginner">
-          <button class="opportunity-toggle" type="button" aria-expanded="false">
-            <span class="opportunity-symbol">＋</span>
-            <span class="opportunity-title"><small>START HERE</small><strong>Beginner Guidance</strong><em>No experience required</em></span>
-            <span class="expand-icon">＋</span>
-          </button>
-          <div class="opportunity-details">
-            <p>You do not need to know your exact role yet. We can help you explore your interests and identify a practical starting point.</p>
-            <div class="detail-grid"><span>Interest check</span><span>Basic orientation</span><span>Learning plan</span><span>Peer guidance</span></div>
-            <a class="inline-cta" href="join.html?interest=Beginner%20guidance">Help me start →</a>
-          </div>
-        </article>
-
-        <article class="opportunity-card" id="creation" data-category="music creative beginner">
-          <button class="opportunity-toggle" type="button" aria-expanded="false">
-            <span class="opportunity-symbol">✎</span>
-            <span class="opportunity-title"><small>CREATE</small><strong>Songwriting & Production</strong><em>Ideas, lyrics, arrangements, audio</em></span>
-            <span class="expand-icon">＋</span>
-          </button>
-          <div class="opportunity-details">
-            <p>Explore songwriting, music arrangement, recording, editing, mixing, and collaborative original projects.</p>
-            <div class="detail-grid"><span>Songwriting</span><span>Arrangement</span><span>Recording</span><span>Audio editing</span></div>
-            <a class="inline-cta" href="join.html?interest=Songwriting%20and%20music%20production">I want to create →</a>
-          </div>
-        </article>
-
-        <article class="opportunity-card" id="media" data-category="creative beginner">
-          <button class="opportunity-toggle" type="button" aria-expanded="false">
-            <span class="opportunity-symbol">▣</span>
-            <span class="opportunity-title"><small>BEHIND THE SCENES</small><strong>Media & Creative Team</strong><em>Design, video, photos, digital content</em></span>
-            <span class="expand-icon">＋</span>
-          </button>
-          <div class="opportunity-details">
-            <p>Not every meaningful role happens on stage. Help us document, design, edit, and communicate the story of the community.</p>
-            <div class="detail-grid"><span>Photography</span><span>Videography</span><span>Graphic design</span><span>Social content</span></div>
-            <a class="inline-cta" href="join.html?interest=Media%20and%20creative%20work">I want to help →</a>
-          </div>
-        </article>
-
-        <article class="opportunity-card community-opportunity" id="fellowship" data-category="community beginner">
-          <button class="opportunity-toggle" type="button" aria-expanded="false">
-            <span class="opportunity-symbol">◎</span>
-            <span class="opportunity-title"><small>BELONG</small><strong>Community & Fellowship</strong><em>Come even if music is not your role</em></span>
-            <span class="expand-icon">＋</span>
-          </button>
-          <div class="opportunity-details">
-            <p>Build meaningful friendships, join devotion and fellowship, receive encouragement, and spend time in a community with purpose.</p>
-            <div class="detail-grid"><span>Fellowship</span><span>Devotion</span><span>Team activities</span><span>Encouragement</span></div>
-            <a class="inline-cta" href="join.html?interest=Fellowship%20and%20community">I want to belong →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="help-panel shell reveal">
-      <div><p class="eyebrow">STILL UNSURE?</p><h2>You do not have to choose alone.</h2><p>Tell us what you enjoy and what you hope to learn. We can help you identify a starting point.</p></div>
-      <a class="button" href="join.html?interest=Not%20sure%20yet">Guide Me</a>
     </section>
   </main>
-
-  <footer class="site-footer"><div class="shell footer-content"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>WORSHIP</small></span></a><p>More Than Music. A Community With Purpose.</p><span>© <span class="current-year"></span></span></div></footer>
 
   <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
     <a href="index.html"><span class="nav-icon">⌂</span><small>Home</small></a>
     <a class="active" href="explore.html"><span class="nav-icon">✦</span><small>Explore</small></a>
     <a href="updates.html"><span class="nav-icon">◷</span><small>Updates</small></a>
     <a href="community.html"><span class="nav-icon">◎</span><small>Community</small></a>
-    <a class="join-nav" href="join.html"><span class="nav-icon">＋</span><small>Join</small></a>
+    <a href="join.html"><span class="nav-icon">＋</span><small>Join</small></a>
   </nav>
-
   <script src="script.js"></script>
 </body>
 </html>
