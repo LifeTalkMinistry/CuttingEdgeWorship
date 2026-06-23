@@ -1,6 +1,6 @@
-const PAGE_VERSION = "team-guide-v2";
+const PAGE_VERSION = "team-guide-v3";
 const NAV_ITEMS = [
-  { file: "index.html", label: "Guide", icon: "⌂" },
+  { file: "index.html", label: "Home", icon: "⌂" },
   { file: "community.html", label: "Vision", icon: "◎" },
   { file: "updates.html", label: "Roadmap", icon: "◷" },
   { file: "explore.html", label: "Standards", icon: "✓" },
