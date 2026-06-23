@@ -1,16 +1,18 @@
+const PAGE_VERSION = "team-guide-v2";
 const NAV_ITEMS = [
-  { href: "index.html", label: "Guide", icon: "⌂" },
-  { href: "community.html", label: "Vision", icon: "◎" },
-  { href: "updates.html", label: "Roadmap", icon: "◷" },
-  { href: "explore.html", label: "Standards", icon: "✓" },
-  { href: "join.html", label: "Join", icon: "＋" }
+  { file: "index.html", label: "Guide", icon: "⌂" },
+  { file: "community.html", label: "Vision", icon: "◎" },
+  { file: "updates.html", label: "Roadmap", icon: "◷" },
+  { file: "explore.html", label: "Standards", icon: "✓" },
+  { file: "join.html", label: "Join", icon: "＋" }
 ];
 
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
 document.querySelectorAll(".mobile-bottom-nav").forEach((nav) => {
-  nav.innerHTML = NAV_ITEMS.map(({ href, label, icon }) => {
-    const isActive = currentPage === href;
+  nav.innerHTML = NAV_ITEMS.map(({ file, label, icon }) => {
+    const isActive = currentPage === file;
+    const href = `${file}?v=${PAGE_VERSION}`;
     return `
       <a href="${href}"${isActive ? ' class="active" aria-current="page"' : ""}>
         <span class="nav-icon" aria-hidden="true">${icon}</span>
