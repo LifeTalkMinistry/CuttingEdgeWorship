@@ -1,3 +1,77 @@
+const mobileNavStyle = document.createElement("style");
+mobileNavStyle.textContent = `
+@media (max-width: 720px) {
+  body {
+    padding-bottom: calc(94px + env(safe-area-inset-bottom));
+  }
+
+  main {
+    padding-bottom: 18px;
+  }
+
+  .mobile-bottom-nav {
+    min-height: calc(72px + env(safe-area-inset-bottom));
+    padding: 7px 8px env(safe-area-inset-bottom);
+    background: #09090d;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 -14px 34px rgba(0, 0, 0, 0.5);
+    backdrop-filter: none;
+  }
+
+  .mobile-bottom-nav a {
+    gap: 3px;
+    color: #777480;
+  }
+
+  .mobile-bottom-nav a::before {
+    display: none !important;
+  }
+
+  .mobile-bottom-nav .nav-icon,
+  .mobile-bottom-nav .join-nav .nav-icon {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    color: #777480;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    font-size: 1.08rem;
+    line-height: 1;
+    transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  .mobile-bottom-nav a.active,
+  .mobile-bottom-nav .join-nav.active {
+    color: var(--accent);
+  }
+
+  .mobile-bottom-nav a.active .nav-icon,
+  .mobile-bottom-nav .join-nav.active .nav-icon {
+    color: var(--ink);
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  .mobile-bottom-nav small {
+    font-size: 0.6rem;
+    font-weight: 800;
+  }
+
+  .opportunity-card,
+  .rail-card,
+  .vision-swipe-card,
+  .reflection-swipe-card,
+  .milestone-card,
+  .form-result {
+    scroll-margin-bottom: 105px;
+  }
+}
+`;
+document.head.appendChild(mobileNavStyle);
+
 document.querySelectorAll(".current-year").forEach((node) => {
   node.textContent = new Date().getFullYear();
 });
