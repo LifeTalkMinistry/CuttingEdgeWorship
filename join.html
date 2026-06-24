@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="The joining process for CuttingEdge Worship." />
+  <meta name="description" content="The joining and active-membership commitment process for CuttingEdge Worship." />
   <meta name="theme-color" content="#09090d" />
   <title>Join | CuttingEdge Worship Team Guide</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=team-guide-v4" />
+  <style>
+    .standards-confirm{display:flex;margin:4px 0 12px;padding:11px;align-items:flex-start;gap:9px;background:rgba(217,255,86,.07);border:1px solid rgba(217,255,86,.18);border-radius:12px}.standards-confirm input{width:17px;height:17px;margin-top:2px;accent-color:var(--accent)}.standards-confirm span{color:var(--muted);font-size:.7rem;line-height:1.4}.standards-confirm a{color:var(--accent);font-weight:800}@media(max-width:1024px){.standards-confirm{padding:9px;margin-bottom:9px}.standards-confirm span{font-size:.63rem}}
+  </style>
 </head>
 <body>
   <header class="site-header">
     <nav class="top-nav shell" aria-label="Main navigation">
-      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>TEAM GUIDE</small></span></a>
-      <div class="desktop-nav"><a href="index.html">Guide</a><a href="community.html">Vision</a><a href="updates.html">Roadmap</a><a href="explore.html">Standards</a><a class="nav-cta active" href="join.html">Join</a></div>
+      <a class="brand" href="index.html?v=team-guide-v4"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h28L25 24l13 16H10l13-16L10 8Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M17 14h14L24 23l7 11H17l7-11-7-9Z" fill="currentColor"/></svg><span><strong>CuttingEdge</strong><small>TEAM GUIDE</small></span></a>
+      <div class="desktop-nav"><a href="index.html?v=team-guide-v4">Home</a><a href="community.html?v=team-guide-v4">Vision</a><a href="updates.html?v=team-guide-v4">Roadmap</a><a href="explore.html?v=team-guide-v4">Standards</a><a class="nav-cta active" href="join.html?v=team-guide-v4">Join</a></div>
     </nav>
   </header>
 
@@ -24,37 +27,39 @@
     <section class="app-screen">
       <div class="shell join-layout">
         <aside class="join-note">
-          <p class="eyebrow">JOINING PROCESS</p>
-          <h2>Joining begins with alignment, not immediate assignment.</h2>
-          <p>Reading the guide helps you understand the department before entering its development and service process.</p>
+          <p class="eyebrow">JOINING & COMMITMENT PROCESS</p>
+          <h2>Active service begins with clarity and agreement.</h2>
+          <p>The one-on-one conversation helps the team understand your capacity, limitations, concerns, and willingness to follow the recording-team standards.</p>
           <ol class="join-steps">
             <li><span>01</span><strong>Review the vision and standards</strong></li>
-            <li><span>02</span><strong>Express your role interest</strong></li>
-            <li><span>03</span><strong>Join an initial conversation</strong></li>
-            <li><span>04</span><strong>Attend orientation or observation</strong></li>
-            <li><span>05</span><strong>Train, develop, and serve</strong></li>
+            <li><span>02</span><strong>Share your role interest and present capacity</strong></li>
+            <li><span>03</span><strong>Complete a one-on-one commitment conversation</strong></li>
+            <li><span>04</span><strong>Attend orientation, observation, or training</strong></li>
+            <li><span>05</span><strong>Receive or continue an active team assignment</strong></li>
           </ol>
         </aside>
 
         <form class="compact-form" id="interest-form">
-          <p class="eyebrow">SERVICE INTEREST</p>
+          <p class="eyebrow">REQUEST A CONVERSATION</p>
           <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="Enter your name" /></div>
+          <div class="form-row"><label for="status">Your current status</label><select id="status" name="status" required><option value="">Choose your status</option><option>Current active member</option><option>Returning or inactive member</option><option>Prospective new member</option><option>Not sure yet</option></select></div>
           <div class="form-row"><label for="interest">Which area interests you?</label><select id="interest" name="interest" required><option value="">Choose an area</option><option>Vocals and Worship Leading</option><option>Instruments and Arrangement</option><option>Songwriting and Original Music</option><option>Audio and Music Production</option><option>Media and Creative</option><option>Training and Development</option><option>Not sure yet</option></select></div>
-          <div class="form-row"><label for="message">Tell us your experience, availability, or what you want to develop</label><textarea id="message" name="message" required placeholder="Example: I play basic guitar, work on weekdays, and want to learn how to serve with a team..."></textarea></div>
-          <button class="primary-button" type="submit">Create My Interest Message</button>
-          <p class="form-footnote">Submitting interest does not automatically assign an active role. It begins a conversation and development process.</p>
+          <div class="form-row"><label for="message">Share your experience, availability, limitations, concerns, or what you want to develop</label><textarea id="message" name="message" required placeholder="Example: I work on weekdays, can attend selected morning sessions, and want to develop my vocal confidence..."></textarea></div>
+          <label class="standards-confirm"><input type="checkbox" name="standards_reviewed" required /><span>I have reviewed the <a href="explore.html?v=team-guide-v4">Recording Team Commitment Standards</a> and understand that active membership requires communication, spiritual connection, participation, and responsibility.</span></label>
+          <button class="primary-button" type="submit">Create Conversation Request</button>
+          <p class="form-footnote">This request begins a private conversation. It does not automatically confirm or remove active membership.</p>
         </form>
       </div>
     </section>
   </main>
 
   <section class="message-sheet" id="message-sheet" hidden aria-live="polite">
-    <div class="sheet-head"><strong>Your interest message is ready.</strong><button class="sheet-close" id="sheet-close" type="button" aria-label="Close">×</button></div>
+    <div class="sheet-head"><strong>Your conversation request is ready.</strong><button class="sheet-close" id="sheet-close" type="button" aria-label="Close">×</button></div>
     <textarea id="generated-message" readonly></textarea>
     <button class="primary-button" id="copy-message" type="button">Copy Message</button>
   </section>
 
-  <nav class="mobile-bottom-nav" aria-label="Mobile navigation"><a href="index.html"><span class="nav-icon">⌂</span><small>Guide</small></a><a href="community.html"><span class="nav-icon">◎</span><small>Vision</small></a><a href="updates.html"><span class="nav-icon">◷</span><small>Roadmap</small></a><a href="explore.html"><span class="nav-icon">✓</span><small>Standards</small></a><a class="active" href="join.html"><span class="nav-icon">＋</span><small>Join</small></a></nav>
-  <script src="script.js"></script>
+  <nav class="mobile-bottom-nav" aria-label="Mobile navigation"><a href="index.html?v=team-guide-v4"><span class="nav-icon">⌂</span><small>Home</small></a><a href="community.html?v=team-guide-v4"><span class="nav-icon">◎</span><small>Vision</small></a><a href="updates.html?v=team-guide-v4"><span class="nav-icon">◷</span><small>Roadmap</small></a><a href="explore.html?v=team-guide-v4"><span class="nav-icon">✓</span><small>Standards</small></a><a class="active" href="join.html?v=team-guide-v4"><span class="nav-icon">＋</span><small>Join</small></a></nav>
+  <script src="script.js?v=team-guide-v4"></script>
 </body>
 </html>
