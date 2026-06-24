@@ -1,4 +1,4 @@
-const PAGE_VERSION = "team-guide-v3";
+const PAGE_VERSION = "team-guide-v4";
 const NAV_ITEMS = [
   { file: "index.html", label: "Home", icon: "⌂" },
   { file: "community.html", label: "Vision", icon: "◎" },
@@ -56,10 +56,10 @@ if (form && messageSheet && generatedMessage) {
       `My name is ${name}.`,
       `I am interested in: ${interest}.`,
       "",
-      "My experience, availability, or what I would like to develop:",
+      "My experience, availability, limitations, or what I would like to develop:",
       message,
       "",
-      "I have reviewed the CuttingEdge Worship Team Guide and would like to request an initial conversation about the joining and development process."
+      "I have reviewed the CuttingEdge Worship vision and recording-team commitment standards. I would like to request a one-on-one conversation about my willingness, present capacity, and next step in the joining or active-membership process."
     ].join("\n");
 
     messageSheet.hidden = false;
