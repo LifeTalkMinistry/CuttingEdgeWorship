@@ -45,21 +45,23 @@ if (form && messageSheet && generatedMessage) {
 
     const data = new FormData(form);
     const name = String(data.get("name") || "").trim();
+    const status = String(data.get("status") || "").trim();
     const interest = String(data.get("interest") || "").trim();
     const message = String(data.get("message") || "").trim();
 
-    if (!name || !interest || !message) return;
+    if (!name || !status || !interest || !message) return;
 
     generatedMessage.value = [
       "Hello CuttingEdge Worship!",
       "",
       `My name is ${name}.`,
+      `My current status is: ${status}.`,
       `I am interested in: ${interest}.`,
       "",
-      "My experience, availability, limitations, or what I would like to develop:",
+      "My experience, availability, limitations, concerns, or what I would like to develop:",
       message,
       "",
-      "I have reviewed the CuttingEdge Worship vision and recording-team commitment standards. I would like to request a one-on-one conversation about my willingness, present capacity, and next step in the joining or active-membership process."
+      "I have reviewed the CuttingEdge Worship vision and Recording Team Commitment Standards. I would like to request a one-on-one conversation about my willingness, present capacity, and next step in the joining or active-membership process."
     ].join("\n");
 
     messageSheet.hidden = false;
